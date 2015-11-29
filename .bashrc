@@ -2,6 +2,7 @@ clear
 cfg_path=~/bashrc/cfg/
 . ${cfg_path}utility.cfg
 . ${cfg_path}bash.cfg
+. ${cfg_path}open.cfg
 . ${cfg_path}git.cfg
 . ${cfg_path}migration.cfg
 . ${cfg_path}mysql.cfg
@@ -21,7 +22,7 @@ done < "$path_config"
 
 #changelog
 if [[ "$mostrar_mensagem_ultimo_commit" == true ]] ; then
-	bash_changelog $(echo "--after='"$(cat ~/.bashversion)"'" || echo "-1")
+	bash_changelog $(echo "-after='"$(cat ~/.bashversion)"'" || echo "1")
 fi
 
 use sindical
