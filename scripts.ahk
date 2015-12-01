@@ -6,7 +6,7 @@ SetKeyDelay, -1, -1
 
 
 ~CapsLock::
-if (A_PriorHotkey <> "~CapsLock" or A_TimeSincePriorHotkey > 400)
+if (A_PriorHotkey <> "~CapsLock" or A_TimeSincePriorHotkey > 250)
 {
     KeyWait, CapsLock, L
     return
@@ -22,8 +22,8 @@ return
 ::avisar_::está feita, pode avisar.
 
 ; snippets
-::innerpgo::pgo_pagamento pgo inner join ttt_titulo_pagamento ttt on ttt.pgo_id = pgo.pgo_id inner join tto_titulo tto on tto.tto_id = ttt.tto_id inner join mvo_movimentacao mvo on mvo.mvo_id = tto.mvo_id
-::leftpgo::pgo_pagamento pgo left join ttt_titulo_pagamento ttt on ttt.pgo_id = pgo.pgo_id left join tto_titulo tto on tto.tto_id = ttt.tto_id left join mvo_movimentacao mvo on mvo.mvo_id = tto.mvo_id
+::innerpgo_::pgo_pagamento pgo inner join ttt_titulo_pagamento ttt on ttt.pgo_id = pgo.pgo_id inner join tto_titulo tto on tto.tto_id = ttt.tto_id inner join mvo_movimentacao mvo on mvo.mvo_id = tto.mvo_id
+::leftpgo_::pgo_pagamento pgo left join ttt_titulo_pagamento ttt on ttt.pgo_id = pgo.pgo_id left join tto_titulo tto on tto.tto_id = ttt.tto_id left join mvo_movimentacao mvo on mvo.mvo_id = tto.mvo_id
 
 ; tabelas
 ::clo_::clo_cliente_remessa_configuracao

@@ -8,7 +8,7 @@ cfg_path=~/bashrc/cfg/
 . ${cfg_path}sublime.cfg
 . ${cfg_path}bash.cfg
 
-music -o
+#music -o
 
 #carregar config
 [ -f ~/.bashversion ] || touch ~/.bashversion
